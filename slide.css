@@ -1,0 +1,176 @@
+.front
+{
+
+    border :2px solid red;
+    background-image:url('/math2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: all ease 1s;
+  
+}
+.full
+{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  
+
+}
+.head
+{
+
+
+    transform-style: preserve-3d;
+ 
+  background-color: transparent;
+  transition: all ease 0.4s;
+
+  width: 200px;
+  height:200px;
+}
+.front,.back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+button
+{
+    cursor: pointer;
+}
+.back
+{
+  border: 1px solid green;
+  
+  background-color: red;
+  color:black;
+  
+  transform: rotateY(180deg);
+ 
+
+ 
+}
+
+.head:hover
+{
+    transform: rotateY(180deg);
+  
+}
+.head2
+{
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
+    transform-style: preserve-3d;
+    background-color: transparent;
+    transition: all ease 0.5s;
+
+}
+.front1 ,.back1
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.front1
+{
+    background-color: green;
+
+}
+.back1
+{
+    border: 1px solid red;
+    background-color: dodgerblue;
+ 
+    transform: rotateY(180deg);
+    
+}
+.head2:hover
+{
+    transform: rotateY(180deg);
+}
+
+.head3
+{
+width: 200px;
+height: 200px;
+border:  1px solid red;
+background-color: red;
+transform-style: preserve-3d;
+transition: all ease 0.5s;
+
+
+
+}
+.front2,.back2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.front2
+{
+    border: 1px solid greenyellow;
+    background-color: burlywood;
+}
+.back2
+{
+    border:1px solid pink;
+    background-color: brown;
+    transform: rotateY(180deg);
+}
+.head3:hover
+{
+    transform: rotateY(180deg);
+}
+@media screen  and (max-width:440px)
+{
+   .full
+   {
+   align-items: center;
+   justify-content: center;
+    flex-direction: column;
+   }
+   .back
+   {
+    border: 1px solid green;
+  
+    background-color: red;
+    color:black;
+    
+    transform: rotateX(180deg);
+   }
+   .head:hover
+{
+    transform: rotateX(180deg);
+  
+}.back1
+{
+    border: 1px solid red;
+    background-color: dodgerblue;
+ 
+    transform: rotateX(180deg);
+    
+}
+.head2:hover
+{
+    transform: rotateX(180deg);
+}
+.back2
+{
+    border:1px solid pink;
+    background-color: brown;
+    transform: rotateX(180deg);
+}
+.head3:hover
+{
+    transform: rotateX(180deg);
+}
+
+
+}
